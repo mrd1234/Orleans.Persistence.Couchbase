@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Unibet.Orleans.Persistence.Couchbase</PackageId>
+    <Product>Unibet.Orleans.Persistence.Couchbase</Product>
+    <RepositoryUrl></RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Old\**" />
+    <EmbeddedResource Remove="Old\**" />
+    <None Remove="Old\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Config\StorageConstants.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CouchbaseNetClient" Version="2.7.12" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Orleans.OrleansProviders" Version="3.0.0" />
+    <PackageReference Include="Polly" Version="7.1.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.6.0" />
+    <PackageReference Include="System.Data.HashFunction.xxHash" Version="2.0.0" />
+  </ItemGroup>
+
+</Project>
