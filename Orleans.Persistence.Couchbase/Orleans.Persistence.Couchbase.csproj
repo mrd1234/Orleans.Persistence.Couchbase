@@ -1,11 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+   
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageId>Unibet.Orleans.Persistence.Couchbase</PackageId>
-    <Product>Unibet.Orleans.Persistence.Couchbase</Product>
-    <RepositoryUrl></RepositoryUrl>
+    <Deterministic>false</Deterministic>
+    <AssemblyVersion>1.1.*</AssemblyVersion>
+    <PackageId>Orleans.Persistence.Couchbase</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Mark</Authors>
+    <Company>MRD</Company>
+    <Product>Orleans.Persistence.Couchbase</Product>
+    <Description>Allows storing of Microsoft Orleans grain state in Couchbase</Description>
+    <RepositoryUrl>https://github.com/mrd1234/Orleans.Persistence.Couchbase</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags>Orleans Couchbase Storage Persistence StorageProvider</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

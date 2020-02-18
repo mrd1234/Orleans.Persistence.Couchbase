@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Orleans.Providers;
 
-namespace Orleans.Persistance.Couchbase.IntegrationTests
+namespace Orleans.Persistence.Couchbase.IntegrationTests
 {
     [StorageProvider(ProviderName = "TestStorageProvider")]
 	public class TestGrain : Grain<MockState>, ITestGrain

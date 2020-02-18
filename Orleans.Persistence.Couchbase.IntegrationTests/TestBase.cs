@@ -7,7 +7,7 @@ using Orleans.Persistence.Couchbase.Config;
 using Orleans.TestingHost;
 using JsonSerializer = Orleans.Persistence.Couchbase.Serialization.JsonSerializer;
 
-namespace Orleans.Persistance.Couchbase.IntegrationTests
+namespace Orleans.Persistence.Couchbase.IntegrationTests
 {
     using JsonSerializer = JsonSerializer;
 

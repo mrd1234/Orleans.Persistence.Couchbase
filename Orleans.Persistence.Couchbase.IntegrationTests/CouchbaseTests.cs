@@ -1,4 +1,4 @@
-﻿namespace Orleans.Persistance.Couchbase.IntegrationTests
+﻿namespace Orleans.Persistence.Couchbase.IntegrationTests
 {
     using System.Threading.Tasks;
     using NUnit.Framework;

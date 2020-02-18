@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Orleans.Persistance.Couchbase.IntegrationTests
+namespace Orleans.Persistence.Couchbase.IntegrationTests
 {
     [Serializable]
     public class MockState

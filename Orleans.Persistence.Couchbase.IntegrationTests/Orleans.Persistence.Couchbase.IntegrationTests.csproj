@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Orleans.Persistance.Couchbase\Orleans.Persistence.Couchbase.csproj" />
+    <ProjectReference Include="..\Orleans.Persistence.Couchbase\Orleans.Persistence.Couchbase.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Orleans.Persistance.Couchbase.IntegrationTests
+namespace Orleans.Persistence.Couchbase.IntegrationTests
 {
     public interface ITestGrain2 : IGrainWithStringKey
 	{

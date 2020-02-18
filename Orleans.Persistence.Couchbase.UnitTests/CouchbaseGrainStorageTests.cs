@@ -1,4 +1,4 @@
-﻿namespace Orleans.Persistance.Couchbase.UnitTests
+﻿namespace Orleans.Persistence.Couchbase.UnitTests
 {
     using System;
     using System.Threading.Tasks;

@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{55241E68-68F9-4D52-AF32-D63272687616}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orleans.Persistence.Couchbase", "Orleans.Persistance.Couchbase\Orleans.Persistence.Couchbase.csproj", "{F2509E0D-D44B-4E64-BD16-E6892989AFDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orleans.Persistence.Couchbase", "Orleans.Persistence.Couchbase\Orleans.Persistence.Couchbase.csproj", "{F2509E0D-D44B-4E64-BD16-E6892989AFDD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orleans.Persistance.Couchbase.UnitTests", "Orleans.Persistance.Couchbase.UnitTests\Orleans.Persistance.Couchbase.UnitTests.csproj", "{4EDD5A5E-D18F-40E2-BECF-E7663F4F0A4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orleans.Persistence.Couchbase.UnitTests", "Orleans.Persistence.Couchbase.UnitTests\Orleans.Persistence.Couchbase.UnitTests.csproj", "{4EDD5A5E-D18F-40E2-BECF-E7663F4F0A4C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orleans.Persistance.Couchbase.IntegrationTests", "Orleans.Persistance.Couchbase.IntegrationTests\Orleans.Persistance.Couchbase.IntegrationTests.csproj", "{66E90C8C-D154-4A6B-85C0-1CE5E4F714DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orleans.Persistence.Couchbase.IntegrationTests", "Orleans.Persistence.Couchbase.IntegrationTests\Orleans.Persistence.Couchbase.IntegrationTests.csproj", "{66E90C8C-D154-4A6B-85C0-1CE5E4F714DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
