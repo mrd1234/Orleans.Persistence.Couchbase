@@ -30,8 +30,9 @@ jobs:
         /p:FileVersion=1.0.0.$BUILD_NUMBER 
         /p:Version=1.0.0.$BUILD_NUMBER
     
-    #- name: Test with dotnet
-      #run: dotnet test
+    - name: Test with dotnet
+      run: dotnet test /home/runner/work/Orleans.Persistence.Couchbase/Orleans.Persistence.Couchbase/Orleans.Persistence.Couchbase.UnitTests/Orleans.Persistence.Couchbase.UnitTests.csproj
+      
     - name: Push to NuGet
       run: dotnet nuget push  
         /home/runner/work/Orleans.Persistence.Couchbase/Orleans.Persistence.Couchbase/Orleans.Persistence.Couchbase/bin/Release/Orleans.Persistence.Couchbase.*.nupkg 
