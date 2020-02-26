@@ -1,0 +1,39 @@
+name: Master branch build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.0.100
+    - name: Nuget Build Number Generator
+      uses: emrekas/build-number@v3
+      with:
+          # GitHub Token to create and delete refs (GITHUB_TOKEN)
+          token: ${{ secrets.GITHUB_TOKEN }} # optional
+          # Prefix for the build-number-<num> tag to make it unique if tracking multiple build numbers
+          #prefix:  # optional
+    - name: Build with dotnet
+      run: dotnet build 
+        --configuration Release 
+        /p:AssemblyVersion=1.0.0.$BUILD_NUMBER 
+        /p:FileVersion=1.0.0.$BUILD_NUMBER 
+        /p:Version=1.0.0.$BUILD_NUMBER
+    
+    #- name: Test with dotnet
+      #run: dotnet test
+    - name: Push to NuGet
+      run: dotnet nuget push  
+        /home/runner/work/Orleans.Persistence.Couchbase/Orleans.Persistence.Couchbase/Orleans.Persistence.Couchbase/bin/Release/Orleans.Persistence.Couchbase.*.nupkg 
+        -k ${{ secrets.NUGET_API_KEY }} 
+        -s https://api.nuget.org/v3/index.json 
